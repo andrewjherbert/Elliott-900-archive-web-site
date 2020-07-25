@@ -1,0 +1,268 @@
+UPDATE OF 16/07/20
+==================
+
+General tidy up in preparation for using GIT for archiving of software and documents.
+
+Updated simulator and utilities to build with Visual Studio 2019.
+
+UPDATE OF 20/02/20
+==================
+
+Added XSTORE_STOP - version of Terry Froggatt's XSTORE which stops after reporting first 20 errors.
+
+UPDATE of 01/10/2019
+====================
+
+Added a document on manufacturing techniques used in Elliott 920M.
+
+UPDATE OF 29/08/2019
+====================
+
+Improvements to AJH version of PERT to further tidy up layout.
+New simulator with PERT command to assist in debugging PERT.
+
+
+UPDATE OF 27/07/2019
+====================
+
+Simulator modified to convert \n when reading text files to \r\n in
+converted telecode stream.
+GPM files updated to be consistent across archive and simulator.
+
+UPDATE OF 21/12/2017
+====================
+
+CAP 920C Coral manual added.
+Fibonacci program added
+XSTORE2 added.
+
+
+UPDATE OF 16/10/2017
+====================
+
+Various fixes to WORKSHOP examples.
+Corrected handling of negative B modification in simulator.
+
+
+Update of 29/07/2017
+====================
+
+Addition of Coral example using FLOATING type and CAP Coral QF
+library.
+
+Update of 17/7/2017
+===================
+
+CAP 920 Coral system added with various demonstrations (Eight Queens,
+program split over multiple interrupt levels, seperate compilation and
+libraries).
+
+"Colin's Race" benchmark comparing time required to compute digits of
+pi in different programming languages.
+
+
+Update of 17/3/2017
+===================
+
+Algol program MAGICSQ added - prints magic squares of order 3 to 10.
+
+Script to run Algol primes calculation corrected.
+
+
+Update of 18/10/2016
+====================
+
+Tidy up of README files.  
+Addition of 902 related documentation.
+Addition of C&G Code documentation.
+All source files converted to UTF-8.
+
+Update of 2/11/2015
+===================
+
+Simulator plotting changes to make NSEW orientation match with paper
+layout.
+
+New HERBERT program LISSAJOUS.
+
+New Scantapes with bug fixes and SCANNED TAPES regenerated with it.
+
+Various other minor bug fixes and tidy ups.
+
+
+Update of 15/10/2015
+====================
+
+
+
+Sources for MASIR Issue 3 and MASIR 15/11/1975 from Terry Froggatt
+added to archive and scripts for building them.
+
+MASIR simulator examples updated to use MASIR 15/11/1975.
+
+Simulator bugs in handling of e.g., <! 215 !> on input fixed.
+
+Treatment of £ and # in telecodes improved.
+
+New version of SCANTAPES to fix bug that duplicated first non-blank
+character of a file translated to 900 format.  All original tapes
+rescanned with this version.  (This bug was mostly harmless as in
+most cases the first character was carriage return).
+
+
+Update of 08/08/2015
+====================
+
+Improved LOWL2GPM.  Updated builds of ALGEBRA, ML/I and LOWL_TESTS
+in LOWL folder.  Minor tidy of THIMBLEBY folder.
+
+
+Update of 04/08/2015
+====================
+
+Tidy up of MLI and LOWL folders.  LOWL folder contains sources
+of latest ML/I (version AJB), LOWL Tests and ALGEBRA and full tool
+chain to convert LOWL to MASIR.
+
+Improved handling of teletype input in Simulator.
+
+
+Update of 30/07/2015
+====================
+
+Later version of Thimbleby ML/I in ML/I demos and correction to 
+tutorial (MCINS example).
+
+
+Update of 22/06/2015
+====================
+
+Small correction to BUILD_LPRLIBRARY to make ALG16KLPR(AJH) work 
+correctly.
+
+Simulator tidy command cancels Algol ON if set.
+
+
+Update of 21/06/2015
+====================
+
+Added Willetts and Wood tape collections.
+
+AJHALGOL:-
+
+BUILD_ALG16KLG(AJH) modified to also produce ALG16KLGLPR(AJH) with
+LPRINT embedded.
+
+Minor tidies to ACDUTILITIES (AMEND).
+
+Simulator:-
+
+Initial instruction handling in simulator improved and simplied. 
+
+Checked consistent with 903 hardware. (See HISTOR in HERBERT programs).
+
+RESTART addr (Restart and run on to address) made to work correctly.
+
+
+Update of 20/05/2015
+====================
+
+Added Thimbleby tape collection.
+
+Added TGPM - a version of GPM by Howard Thimbleby and FRED, yet another
+version of GPM by an unknown ACD author.
+
+
+Update of 18/04/2015
+====================
+
+Aldenham School utilities added to Herbert MASTERS and demonstrations
+added to simulator.  Scan of Chris Moller notes added to MANUALS.
+
+
+Update of 03/04/2015
+====================
+
+ML/I macrogenerator including tests and demonstrations added.
+
+
+Update of 01/04/2015
+====================
+
+Simulator:-
+
+Corrected implementation of 15 7174 & 15 7175 instructions for 920C/905.
+
+
+
+Update of 27/03/2015
+====================
+
+AJH Algol
+
+The main purpose of this update was to release AJH ALGOL, a new version
+of Elliott Algol that consolidates 903 ALgol Issue 6, MASD ALgol and
+Hunter Algol. It makes HUNTERP ALgol obsolete and this has been
+withdrawn).
+
+AJH ALGOl is included in both the paper tape archive and the Simulator
+examples.
+
+The paper tape archive includes sources and scripts for building AJH
+Algol, starting from 903 Algol Issue 6.
+
+The scripts contain Bowdler edits of the 903 Algol issue 6 sources (for
+the 2 Pass and Large Program Systems).  These can be found in the 
+"SCRIPTS" folder within the "HERBERT ARCHIVE" folder.
+
+In the "MANUALS" folder there are two documents by the author.
+
+The first document "Algol Interpreter Notes" augments the original 903
+Algol system design documents with a description of the workings of the
+Hunter interpreter, including the code sequences generated for various
+Algol constructions.  (In the "TESTS" folder in the "HERBERT ARCHIVE"
+there are copies of the programs to generate these and confirm the
+correct functioning of the interpreter).
+
+The second document "Algol Recovery Project" - describes how sources for
+903, Hunter and AJH Algol were constructed from the surviving tapes in
+the Don Hunter paper tape collection.
+
+
+Music Programs
+
+It has been found experimentally that the “tuning” of the loudspeaker on
+each different 903 is unique to that machine, therefore to be in tune a
+music playing program must be adjusted to each machine.  This generally
+requires the use of an oscilloscope to measure the output frequency
+corresponding to different instruction sequences (the signal is too
+impure to use a digital guitar tuner or similar).
+
+The music programs include a small utility, PLAYER, which can be used to
+calibrate sequences for any desired frequency.
+
+
+Simulator
+
+There is a new version of the Windows PC Elliott 900 series simulator
+that has various minor bug fixes included and some additional diagnostic
+commands to help with the development of AJH Algol.  The simulator
+manual has been broken up into a series of smaller documents to make it
+easier to find and read sections on specific items.
+
+
+Documentation
+
+For fun, two Elliott style "Software Release Notices" have been issued,
+one for AJH Algol and one for AJH Music.  The can be found in the
+"Release Notes" folder.
+
+
+
+
+
+
+
+
+
+
